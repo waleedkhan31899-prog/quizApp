@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Simple Quiz App</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+    <main class="app">
+        <header class="app-header">
+            <h1>Quiz App</h1>
+            <p class="subtitle">Multiple-choice quiz — JavaScript se connect karne ke liye ready</p>
+        </header>
+
+
+        <section class="quiz-card" id="quiz-card">
+            <!-- Question area -->
+            <div class="question-area">
+                <p id="question" class="question">Question will appear here</p>
+            </div>
+
+
+            <!-- Options (buttons) -->
+            <div id="options" class="options">
+                <button class="option" data-index="0">Option 1</button>
+                <button class="option" data-index="1">Option 2</button>
+                <button class="option" data-index="2">Option 3</button>
+                <button class="option" data-index="3">Option 4</button>
+            </div>
+
+
+            <!-- Controls -->
+            <div class="controls">
+                <button id="nextBtn" class="btn primary">Next</button>
+                <button id="restartBtn" class="btn ghost">Restart</button>
+            </div>
+
+
+            <!-- Result (hidden until end) -->
+            <div id="result" class="result hidden">
+                <h2>Your Score</h2>
+                <p id="scoreText">0 out of 0</p>
+            </div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>
